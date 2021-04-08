@@ -12,5 +12,111 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
   font-family: 'Press Start 2P', cursive;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: whitesmoke;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.screen ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.screen ul li {
+  padding: 1rem;
+}
+
+.screen button {
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: box-show 0.2s linear;
+  transition: box-show 0.2s linear;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.screen button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.screen button p {
+  margin-bottom: 1rem;
+  font-family: 'Press Start 2P', cursive !important;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.screen button:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.screen .time-score {
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.screen img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.screen.switch {
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  line-height: 3rem;
 }

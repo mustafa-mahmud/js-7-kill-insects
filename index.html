@@ -9,11 +9,57 @@
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Document</title>
+		<title>Kill Insects Game</title>
 	</head>
 
 	<body>
-		<h1>Kill Insects</h1>
+		<div class="screen game-start">
+			<h1>are your ready to start game?</h1>
+			<button class="game-start">Game Start</button>
+		</div>
+
+		<div class="screen insects">
+			<h1>Choose Your Killer Insect</h1>
+
+			<ul>
+				<li>
+					<button>
+						<p>Dragon Fly</p>
+						<img src="img/dragonfly.png" alt="dragonfly" />
+					</button>
+				</li>
+				<li>
+					<button>
+						<p>Bug</p>
+						<img src="img/bug.png" alt="bug" />
+					</button>
+				</li>
+				<li>
+					<button>
+						<p>Bittle Bug</p>
+						<img src="img/bittlebug.png" alt="bittlebug" />
+					</button>
+				</li>
+				<li>
+					<button>
+						<p>Butterfly</p>
+						<img src="img/buterfly.png" alt="butterfly" />
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="screen game-container">
+			<div class="time-score">
+				<span class="time">Time: 00:00</span>
+				<span class="score">Score: 20</span>
+			</div>
+
+			<div class="insect">
+				<img src="img/bug.png" alt="but" />
+			</div>
+
+		</div>
 	</body>
 
 </html>
